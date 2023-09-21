@@ -9,6 +9,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   bool _selectedBox = false;
+  bool _selectedBox1 = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,10 +34,10 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
          ListTile(
             leading: Checkbox(
-              value: _selectedBox , 
+              value: _selectedBox1 , 
               onChanged: (box) {
                 setState(() {
-                    _selectedBox = box!;
+                    _selectedBox1 = box!;
                 });
               
               }
